@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна №3</title>
+</head>
+<body>
+
+<form>
+<table border="1" align="center">
+    <tr>
+        <td colspan="2" align="center"><b>Pizza Shop 2.0</b></td>
+    </tr>
+    <tr>
+        <td> Name </td>
+        <td><input type="text" placeholder="Enter your name" required pattern="[a-zA-Z]+" title="The name can contain only letters of the Latin alphabet."></td>
+    </tr>
+    <tr>
+        <td> Pizza Topping </td>
+        <td>
+            <input type="radio" id="Supreme" name="Topping" value="Supreme" required>
+            <label for="Supreme">Supreme</label><br>
+            <input type="radio" id="Vegetarian" name="Topping" value="Vegetarian">
+            <label for="Vegetarian">Vegetarian</label><br>
+            <input type="radio" id="Hawaiian" name="Topping" value="Hawaiian">
+            <label for="Hawaiian">Hawaiian</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td> Pizza Sauce </td>
+        <td>
+            <select name="Sauce">
+                <option value="1">Alfredo</option>
+                <option value="2">Garlicky</option>
+                <option value="3">Cheesy</option>
+                <option value="4" selected>Tomato</option>
+                <option value="5">Creamy</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> Option Extras </td>
+        <td>
+            <input type="checkbox" id="Extra Cheese" name="Extra Cheese">
+            <label for="Extra Cheese">Extra Cheese</label>
+            <input type="checkbox" id="Gluten Free Base" name="Gluten Free Base">
+            <label for="Gluten Free Base">Gluten Free Base</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> Delivery Instructions: <br>
+            <textarea cols="49" rows="3" placeholder="Specify detailed delivery instructions" required minlength="8"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><button type="submit">Send my Order</button></td>
+    </tr>
+</table>
+</form>
+
+</body>
+</html>
